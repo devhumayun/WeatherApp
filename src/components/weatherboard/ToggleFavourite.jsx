@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import Favourite_Icon_red from '../../assets/heart-red.svg'
 import Favourite_Icon from '../../assets/heart.svg'
 import { FavouriteContext, WeatherContext } from '../../context'
@@ -25,6 +25,11 @@ function ToggleFavourite() {
         setIsFavourite(!isFavourite)
     }
 
+    // check the location is already favourite
+    useEffect(() => {
+        const found = favourites.find((fav) => fav.location === location)
+        setIsFavourite(found)
+    }, [favourites, location])
 
     return (
         <div className="md:col-span-2">
