@@ -1,6 +1,6 @@
 import Header from "./components/header/Header";
 import WeatherBoard from "./components/weatherboard/WeatherBoard";
-import { WeatherProvider } from "./provider";
+import WeatherProvider from "./provider/WeatherProvider";
 
 export default function App() {
   return (
