@@ -11,7 +11,7 @@ function FavLocationModal() {
                 {
                     favourites.length > 0 ?
                         favourites.map((fav) => (
-                            <li key={fav.location} className="hover:bg-gray-200"><span onClick={() => setSelectedLocation({ ...fav })}>{fav.location}</span></li>
+                            <li key={fav.location} className="hover:bg-gray-200"><a href="#" onClick={() => setSelectedLocation({ ...fav })}>{fav.location}</a></li>
                         )) :
                         <><p>No favourite list yet</p></>
                 }
