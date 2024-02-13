@@ -43,7 +43,7 @@ const useWeather = () => {
         const errorMsg = `Featching weather data failed : ${response.status}`;
         throw new Error(errorMsg);
       }
-      const data = await response.json(``);
+      const data = await response.json();
       const updateWeatherData = {
         ...weatherData,
         location: data?.name,

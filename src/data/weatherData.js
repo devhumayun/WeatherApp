@@ -29,6 +29,21 @@ const data = [
     latitude: 43.6534817,
     longitude: -79.3839347,
   },
+  {
+    location: "Cumilla",
+    latitude: 23.450001,
+    longitude: 91.199997,
+  },
+  {
+    location: "RangPur",
+    latitude: 25.74486,
+    longitude: 89.275589,
+  },
+  {
+    location: "Chuadanga",
+    latitude: 23.643999,
+    longitude: 88.855637,
+  },
 ];
 
 function getLocations() {
